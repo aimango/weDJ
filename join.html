@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<style type="text/css"> text-align:center; color: white; </style> 
+	<title> weDJ </title>
+
+	<link rel="stylesheet" href="home.css" type="text/css" />
+    	<meta http-equiv="X-UA-Compatible" content="chrome=1"> 
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
+</head>
+
+<body id="index" class="home">
+
+<header id="banner" class="body">
+	<h1><a href="#"> weDJ </a></h1>
+	<h2> Create and share playlists! </h2>
+
+	<nav><ul>
+		<li><a id="home" href="home.html">Home</a></li>
+		<li><a id="create" href="create.html">Create A Party Playlist</a></li>
+		<li class="active"><a  id="join" href="#">Join A Party</a></li>
+	</ul></nav>
+	
+	<div id=info>Have your friends tell you about the party name and password for the events they are having and sign in to view and add songs to their playlists!
+	</div>
+
+	<title>Create a Playlist :: WeDJ</title>
+        <link href='http://fonts.googleapis.com/css?family=Pompiere&v2' rel='stylesheet' type='text/css'>
+	<style> 
+     
+        
+        #form {
+            list-style-type: none;
+            list-style-position: outside;
+            margin-left: 0;
+            padding-left: 20px;
+        }
+
+	#info{
+		width: 600px;
+		text-align: center;
+		margin-bottom: 20px;
+		 font-family: 'Pompiere', cursive;
+	   	 /*font-family: "Lucida Grande", "Segoe UI";*/
+            	font-size: 20px;
+
+	}
+
+	#banner nav #join:hover, #banner nav a:active,
+	#banner nav .active a:link, #banner nav .active a:visited {
+	background: #003F87;
+	color: #fff;
+	text-shadow: none !important;
+	}
+
+        
+        li { margin-bottom: 1em; padding-left:-100px;}
+
+
+        #fieldset {
+            margin-top:50px;
+	    margin-bottom: 50px;
+            border-radius: 8px;
+	    width: 360px;
+            border: 0px solid transparent;
+            box-shadow: 0 0 10px #999;
+	    backgroun-color: white;
+	    font-family: 'Pompiere', cursive;
+	    /*font-family: "Lucida Grande", "Segoe UI";*/
+            font-size: 20px;
+	    /*background-image: url("random_grey_variations.png");*/
+			text-align: left;
+            margin: 0 auto;
+        }
+
+        .awesomeCreateButton{
+           
+    background: #000 url(overlay.png) repeat-x;
+    border: 0px solid transparent;
+    display: inline-block;
+    font-size:18px;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    
+    position: relative;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+
+        }
+
+         .awesomeCreateButton:hover{
+           
+    background: #c74350 url(overlay.png) repeat-x;
+    box-shadow: 0 0 6px #999;
+
+        }
+
+        </style> 
+
+</header>
+
+<div id="content">
+	<fieldset id="fieldset"> 
+        <ul id="form"> 
+            
+            <li> 
+                <label for="name">Party Name:</label> 
+                <input id="name" name="name" placeholder="Enter the party name" type="text"> 
+            </li> 
+	    
+	     <li> 
+               Admin Password:
+                <input id="guestPassword" name="guestPassword" placeholder="Guest Password" type="password"> 
+            </li> 
+	<p> OR </p>
+            <li> 
+               Guest Password:
+                <input id="guestPassword" name="guestPassword" placeholder="Guest Password" type="password"> 
+            </li> 
+            
+            <li>
+            <button type="submit" class="awesomeCreateButton" onClick="window.location='guestAddSong.html'"> View Playlist</button> 
+            </li>
+        </ul> 
+	
+	</fieldset> 
+
+</div>
+</body>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<body id="index" class="home">
+
+<header id="banner" class="body">
+	<h1><a href="#"> weDJ </a></h1>
+	<h2> Create and share playlists! </h2>
+<div id="signout"><a href = "home.html">Sign Out</a></div>
+	<nav><ul>
+		<li><a id="home" href="home.html">Home</a></li>
+		<li><a id="create" href="create.html">Create A Party Playlist</a></li>
+		<li><a  id="join" href="join.html">Join A Party</a></li>
+	</ul></nav>
+
+	<title>Create a Playlist :: WeDJ</title>
+        <link href='http://fonts.googleapis.com/css?family=Pompiere&v2' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="home.css" type="text/css" />
+<style> 
+     
+        
+        #form {
+            list-style-type: none;
+            list-style-position: outside;
+            margin-left: 0;
+            padding-left: 20px;
+        }
+	#banner nav #create:hover, #banner nav a:active,
+	#banner nav .active a:link, #banner nav .active a:visited {
+	background: orange;
+	color: #fff;
+	text-shadow: none !important;
+	}
+
+ul{
+	list-style: none;
+}
+
+#signout{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+        
+        li { margin-bottom: 1em; padding-left:-100px;}
+        ::-webkit-validation-bubble { opacity: 1; }
+		::-webkit-validation-bubble-arrow-clipper {}
+		::-webkit-validation-bubble-arrow {
+			background-color: #666;
+			border: 1px solid #333;
+			border-width: 1px 0 0 1px;
+			-webkit-box-shadow: none;
+
+            
+		}
+		::-webkit-validation-bubble-message {
+			background: -webkit-linear-gradient(#666,#777);
+			border: 1px solid #333;
+			color: #222;
+			font-size: 140%;
+			-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.333);
+			text-shadow: 0 1px #888, 0 -1px #555;
+		}
+
+        fieldset{
+            margin-top:50px;
+	    margin-bottom: 50px;
+            border-radius: 8px;
+            border: 0px solid transparent;
+            box-shadow: 0 0 10px #999;
+	    backgroun-color: white;
+	    font-family: 'Pompiere', cursive;
+	    /*font-family: "Lucida Grande", "Segoe UI";*/
+            font-size: 22px;
+	    /*background-image: url("random_grey_variations.png");*/
+			text-align: left;
+            margin: 0 auto;
+        }
+
+        input{
+            
+            font-size:15px;
+        }
+
+        .thatPinkButton{
+           text-decoration: none;
+    background: #000 url(overlay.png) repeat-x;
+    border: 0px solid transparent;
+    display: inline-block;
+    font-size:18px;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    
+    position: relative;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+
+        }
+        .thatPinkButton:hover{
+           
+    background: #c74350 url(overlay.png) repeat-x;
+    box-shadow: 0 0 6px #999;
+
+        }
+
+        #myDiv{
+        	background-color: #ccc;
+        	border: 1px solid #777;
+        	border-radius: 10px;
+        	text-align: left;
+        	padding: 20px;
+        	margin-top: 20px;
+        	box-shadow: 0 0 12px #999;
+        }
+
+        #addSongItems{
+        	border: 1px solid #777;
+        	border-radius: 10px;
+        	box-shadow: 0 0 12px #aaa;
+        	padding: 20px;
+        	text-align: left;
+);
+        }
+
+        </style>
+
+<script>
+function addElement() {
+
+  var ni = document.getElementById('myDiv');
+
+  var numi = document.getElementById('theValue');
+
+  var num = (document.getElementById('theValue').value -1)+ 2;
+
+  var artistName = document.getElementById('artistName').value;
+  var songTitle = document.getElementById('songTitle').value;
+
+  numi.value = num;
+
+  var newdiv = document.createElement('div');
+
+  var divIdName = 'my'+num+'Div';
+
+  newdiv.setAttribute('id',divIdName);
+
+  newdiv.innerHTML = num + " ). "+ artistName + ' - ' + songTitle;
+
+  ni.appendChild(newdiv);
+
+}
+</script>
+<div id="addSongItems">
+<input type="hidden" value="0" id="theValue" />
+			<ul>
+			<li> 
+                <label for="name">Artist:</label> 
+                <input id="artistName" name="artistName" placeholder="Your favorite artist/band" type="text"> 
+            </li> 
+            
+            <li> 
+                <label for="name">Song Title:</label> 
+                <input id="songTitle" name="songTitle" placeholder="Your favorite song" type="text"> 
+            </li> 
+       <li>     
+<button onclick="addElement();" class="thatPinkButton">Add Song</button></li>
+</ul>
+</div>
+<div id="myDiv">Playlist:<br/>1 ). Britney Spears - Toxic<br/> 2 ). One Republic - Apologize<br/></div>
+
+</html>
