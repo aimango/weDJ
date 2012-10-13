@@ -1,89 +1,80 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"> 
-  <head> 
+<head> 
     <title>Create a Playlist</title> 
 
-	<script type = "text/javascript">
-		function check(){
-			if (create.day.value == "" || create.day.value == "") //
-				alert("You must enter a valid date");
-			else if (create.partyname.value = "")
-				window.alert("You must enter a party name");
-			else if (create.adminpw.value = "")
-				window.alert("You must enter an Admin password");
-		}
+    <script type = "text/javascript">
+        function check(){
+        if (create.day.value == "" || create.day.value == "")
+            alert("You must enter a valid date");
+        else if (create.partyname.value = "")
+            window.alert("You must enter a party name");
+        else if (create.adminpw.value = "")
+            window.alert("You must enter an Admin password");
+        }
+    </script>
+</head> 
 
-	</script>
-
-
-  </head> 
-  <body> 
- 
+<body> 
     <h1>Create a Playlist</h1> 
     <h3>Create your party playlist! If you want more privacy, you can set a guest password.
-You can also set a Location for users to find your party! </h3> 
- 
+    You can also set a Location for users to find your party! </h3> 
+
     <form name = "create" action = "">
-<!-- action="http://www.starbuzzcoffee.com/processorder.php" method="post" -->
-      <table> 
-        <tr> 
-          <th>Party Name*:</th> 
-          <td> 
-            <input type = "text" name = "partyname" placeholder = "Insert party name"/> 
-          </td> 
-        </tr> 
- 
-        <tr> 
-          <th>Date/Time*:</th> 
-          <td> 
-            <input name="day" type="date" />
+        <table> 
+            <tr> 
+                <th>Party Name*:</th> 
+                <td> 
+                    <input type = "text" name = "partyname" placeholder = "Insert party name"/> 
+                </td> 
+            </tr> 
 
-          </td> 
-        </tr> 
- 
-	<tr> 
-          <th>Admin Password*:</th> 
-          <td> 
-            <input type="text" name="adminpw" /> 
-         
-          </td> 
-        </tr> 
- 
-        <tr> 
-          <th>Guest Password:</th> 
-                     <td> 
-            <input type="text" name="guestpw" /> 
-         
-          </td> 
-        </tr>        
-       
-          <tr> 
-            <th>Host Name:</th> 
-            <td> 
-              <input type="text" name="host" />
-            </td> 
-          </tr> 
-        
-          <tr> 
-            <th>Location:</th> 
-            <td> 
-              <input type="text" name="location" />
-            </td> 
-          </tr> 
+            <tr> 
+                <th>Date/Time*:</th> 
+                <td> 
+                    <input name="day" type="date" />
+                </td> 
+            </tr> 
 
-          <tr> 
-	    <th></th> 
-            <td> 
-              <input type="button" value="Create Playlist" action = "check()"/> 
-            </td>
-            <td> 
-              <input type="button" value="Cancel" /> 
-            </td> 
-          </tr> 
+            <tr> 
+                <th>Admin Password*:</th> 
+                <td> 
+                    <input type="text" name="adminpw" /> 
+                </td> 
+            </tr> 
+
+            <tr> 
+                <th>Guest Password:</th> 
+                <td> 
+                    <input type="text" name="guestpw" /> 
+                </td> 
+            </tr>        
+
+            <tr> 
+                <th>Host Name:</th> 
+                <td> 
+                    <input type="text" name="host" />
+                </td> 
+            </tr> 
+
+            <tr> 
+                <th>Location:</th> 
+                <td> 
+                    <input type="text" name="location" />
+                </td> 
+            </tr> 
+
+            <tr> 
+                <th></th> 
+                <td> 
+                    <input type="button" value="Create Playlist" action = "check()"/> 
+                </td>
+                <td> 
+                    <input type="button" value="Cancel" /> 
+                </td> 
+            </tr> 
         </table> 
-      </form> 
-  </body> 
+    </form> 
+</body> 
 </html> 
- 

@@ -1,95 +1,95 @@
 
 <!DOCTYPE html> 
 <html> 
-	<head>
-		<title>Create a Playlist :: WeDJ</title>
+    <head>
+        <title>Create a Playlist :: WeDJ</title>
         <link href='http://fonts.googleapis.com/css?family=Pompiere&v2' rel='stylesheet' type='text/css'>
-		<style> 
-        body{
-            font-family: 'Pompiere', cursive;
-            /*font-family: "Lucida Grande", "Segoe UI";*/
-            font-size: 20px;
-            /*background-image: url("random_grey_variations.png");*/
-        }
-        ul{
-            list-style-type: none;
-            list-style-position: outside;
-            margin-left: 0;
-            padding-left: 20px;
-        }
-
         
-        li { margin-bottom: 1em; padding-left:-100px;}
-        ::-webkit-validation-bubble { opacity: 1; }
-		::-webkit-validation-bubble-arrow-clipper {}
-		::-webkit-validation-bubble-arrow {
-			background-color: #666;
-			border: 1px solid #333;
-			border-width: 1px 0 0 1px;
-			-webkit-box-shadow: none;
+        <style> 
+            body{
+                font-family: 'Pompiere', cursive;
+                /*font-family: "Lucida Grande", "Segoe UI";*/
+                font-size: 20px;
+                /*background-image: url("random_grey_variations.png");*/
+            }
+            ul{
+                list-style-type: none;
+                list-style-position: outside;
+                margin-left: 0;
+                padding-left: 20px;
+            }
 
             
-		}
-		::-webkit-validation-bubble-message {
-			background: -webkit-linear-gradient(#666,#777);
-			border: 1px solid #333;
-			color: #222;
-			font-size: 140%;
-			-webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.333);
-			text-shadow: 0 1px #888, 0 -1px #555;
-		}
+            li { 
+                margin-bottom: 1em; padding-left:-100px;
+            }
+            
+            ::-webkit-validation-bubble { 
+                opacity: 1; 
+            }
+            ::-webkit-validation-bubble-arrow-clipper {}
+            ::-webkit-validation-bubble-arrow {
+                background-color: #666;
+                border: 1px solid #333;
+                border-width: 1px 0 0 1px;
+                -webkit-box-shadow: none;
+            }
+            ::-webkit-validation-bubble-message {
+                background: -webkit-linear-gradient(#666,#777);
+                border: 1px solid #333;
+                color: #222;
+                font-size: 140%;
+                -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.333);
+                text-shadow: 0 1px #888, 0 -1px #555;
+            }
 
-        fieldset{
-            margin-top:50px;
-            border-radius: 8px;
-            border: 0px solid transparent;
-            box-shadow: 0 0 10px #999;
-        }
+            fieldset{
+                margin-top:50px;
+                border-radius: 8px;
+                border: 0px solid transparent;
+                box-shadow: 0 0 10px #999;
+            }
 
-        .awesomeCreateButton, .awesomeCreateButton:visited {
-            background-color: #91bd09;
-        }
-
+            .awesomeCreateButton, .awesomeCreateButton:visited {
+                background-color: #91bd09;
+            }
         </style> 
-	</head> 
-	<body> 
-	<form style="margin: 0 auto; width: 50%"> 
-	<fieldset id="fieldset"> 
-        <ul> 
-            
-            <li> 
-                <label for="name">Party Name*:</label> 
-                <input id="name" name="name" pattern="[-0-9]+" required placeholder="Enter the party name" type="text"> 
-            </li> 
-            
-            
-            <li> 
-                Date:
-                <input id="date" name="date"placeholder="Date" type="date"> 
-            </li> 
-            <li> 
-                Admin Password:
-                <input id="password" name="url" placeholder="Admin Password" type="password"> 
-            </li>
-            <li> 
-               Guest Password:
-                <input id="guestPassword" name="guestPassword" placeholder="Guest Password" type="password"> 
-            </li> 
-            <li> 
-                <label for="name">Host name*:</label> 
-                <input id="hostName" name="hostName" pattern="[-0-9]+" required placeholder="Name of the party host" type="text"> 
-            </li> 
-            <li> 
-                <label for="name">Location*:</label> 
-                <input id="name" name="name" pattern="[-0-9]+" required placeholder="Venue of the Party" type="text"> 
-            </li> 
-            <li>
-            <button type="submit" class="awesomeCreateButtom">Create Playlist</button> 
-            </li>
-        </ul> 
-	
-	</fieldset> 
-	</form> 
+    </head> 
 
-	</body> 
+    <body> 
+        <form style="margin: 0 auto; width: 50%"> 
+            <fieldset id="fieldset"> 
+                <ul>     
+                    <li> 
+                        <label for="name">Party Name*:</label> 
+                        <input id="name" name="name" pattern="[-0-9]+" required placeholder="Enter the party name" type="text"> 
+                    </li> 
+                    
+                    <li> 
+                        Date:
+                        <input id="date" name="date"placeholder="Date" type="date"> 
+                    </li> 
+                    <li> 
+                        Admin Password:
+                        <input id="password" name="url" placeholder="Admin Password" type="password"> 
+                    </li>
+                    <li> 
+                       Guest Password:
+                        <input id="guestPassword" name="guestPassword" placeholder="Guest Password" type="password"> 
+                    </li> 
+                    <li> 
+                        <label for="name">Host name*:</label> 
+                        <input id="hostName" name="hostName" pattern="[-0-9]+" required placeholder="Name of the party host" type="text"> 
+                    </li> 
+                    <li> 
+                        <label for="name">Location*:</label> 
+                        <input id="name" name="name" pattern="[-0-9]+" required placeholder="Venue of the Party" type="text"> 
+                    </li> 
+                    <li>
+                        <button type="submit" class="awesomeCreateButtom">Create Playlist</button> 
+                    </li>
+                </ul>        
+            </fieldset> 
+        </form> 
+    </body> 
 </html>

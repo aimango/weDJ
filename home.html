@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8" />
-	<style type="text/css"> text-align:center; color: white; </style> 
-	<title> weDJ </title>
+    <meta charset="utf-8" />
+    <style type="text/css"> text-align:center; color: white; </style> 
+    <title> weDJ </title>
 
-	<link rel="stylesheet" href="home.css" type="text/css" />
-    	</head>
+    <link rel="stylesheet" href="home.css" type="text/css" />
+</head>
 
 <body id="index" class="home">
+    <header id="banner" class="body">
+        <h1><a href="#"> weDJ </a></h1>
+        <h2> Create and share playlists! </h2>
 
-<header id="banner" class="body">
-	<h1><a href="#"> weDJ </a></h1>
-	<h2> Create and share playlists! </h2>
+        <nav>
+            <ul>
+                <li class="active"><a id="home" href="#">Home</a></li>
+                <li><a id="create" href="create.html">Create A Party Playlist</a></li>
+                <li><a  id="join" href="join.html">Join A Party</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<nav><ul>
-		<li class="active"><a id="home" href="#">Home</a></li>
-		<li><a id="create" href="create.html">Create A Party Playlist</a></li>
-		<li><a  id="join" href="join.html">Join A Party</a></li>
-	</ul></nav>
+    <section id="content" class="body">
+    <div id="content">
+        <p>
+        Everyone knows that good music makes a good party. Just like how an awesome algorithm makes an awesome search engine.
+        </p>
+        <p>
+        Have you ever gone to a party and the DJ plays the same boring songs or one good song way too many times? If not then you don’t get out much. But all that is coming to an end. Not only does our application create a safe, user-friendly way for guest to suggest music; it also allows a party administrator to display what will currently be playing at the party.
+        </p>
+        <p>
+        It is a fun interactive way to bring complete strangers together and share their taste in music. Be the first to use this app on your campus and let all your friends know how weDJ.
+        </p>
 
-</header>
+        <style>
+            .awesomeCreateButton{       
+                background: #000 url(overlay.png) repeat-x;
+                border: 0px solid transparent;
+                display: inline-block;
+                font-size:18px;
+                padding: 5px 10px 6px;
+                color: #fff;
+                text-decoration: none;
+                -moz-border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+                -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+                text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+                
+                position: relative;
+                cursor: pointer;
+                font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
 
-<section id="content" class="body">
-<div id="content">
- <p>
-Everyone knows that good music makes a good party. Just like how an awesome algorithm makes an awesome search engine.
-</p>
-<p>
-Have you ever gone to a party and the DJ plays the same boring songs or one good song way too many times? If not then you don’t get out much. But all that is coming to an end. Not only does our application create a safe, user-friendly way for guest to suggest music; it also allows a party administrator to display what will currently be playing at the party.
-</p>
-<p>
-It is a fun interactive way to bring complete strangers together and share their taste in music. Be the first to use this app on your campus and let all your friends know how weDJ.
-</p>
-<style>
-
-.awesomeCreateButton{
-           
-    background: #000 url(overlay.png) repeat-x;
-    border: 0px solid transparent;
-    display: inline-block;
-    font-size:18px;
-    padding: 5px 10px 6px;
-    color: #fff;
-    text-decoration: none;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-    
-    position: relative;
-    cursor: pointer;
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        
-
-        }
-
-         .awesomeCreateButton:hover{
-           
-    background: #c74350 url(overlay.png) repeat-x;
-    box-shadow: 0 0 6px #999;
-
-        }
-
-	
-
+            .awesomeCreateButton:hover{
+                background: #c74350 url(overlay.png) repeat-x;
+                box-shadow: 0 0 6px #999;
+            }
         </style> 
 
-	<button type="submit" class="awesomeCreateButton" onclick= "window.location.href='create.html'"> Get Started</button> 
-</div>
+        <button type="submit" class="awesomeCreateButton" onclick= "window.location.href='create.html'"> Get Started</button> 
+    </div>
 </body>
