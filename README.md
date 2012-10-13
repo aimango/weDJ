@@ -5,4 +5,6 @@ and for hosts to administer the playlist.
 
 Simple, fun, and interactive.
 
-Open home.html to see the demo. Note that this is not a working web app, but just a simulation.
+Note that this is not a working web app, but just a simulation.
+
+Contributions: Group Hackathon at Google Fuse 2011. Experimented with html5, webkit, css, all that jazz. 
